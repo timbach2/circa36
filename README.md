@@ -8,8 +8,9 @@ I have retained the code out of nostalgia-- it is the first shopping cart I crea
 Structure
 =========
 
-This is built with an early understanding of MVC.  All requestes are sent to the controller, index.php, which then loads the appropriate view based on the url parameters.
-It attempts separation of logic and presentation by having most of the logic in a monolithic "cart" object, which the views can then access as needed.
+This was built with an early understanding of MVC.  All requestes are sent to the controller, index.php, which then loads the appropriate view based on the url parameters.
+
+It attempts separation of logic and presentation by having almost all of the logic in a monolithic "cart" object, which the views can then access as needed.
 
 
 PHP-LIB
@@ -17,7 +18,9 @@ PHP-LIB
 
 I used phplib for database abstraction and templating.  The templates had the effect of splitting the view into two files:  
 <ol>
-<li>The <i>included</i> html (files ending in .ihtml) </li><li>and the php file to feed variable into the ithml file.</li></ol>
+<li>The <i>included</i> html (files ending in .ihtml) </li>
+<li>and the php file to feed variable into the ithml file.</li>
+</ol>
 This enabled me to completely remove html from the logic; however, it also made it tempting to put logic into the php file that called the view.
 
 The PHP-LIB folder is not included in this repo
