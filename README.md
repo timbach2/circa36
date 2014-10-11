@@ -15,7 +15,9 @@ It attempts separation of logic and presentation by having most of the logic in 
 PHP-LIB
 =======
 
-I used phplib for database abstraction and templating.  The templates had the effect of splitting the view into two files:  The _included_html (files ending in .ihtml) and the php file to feed variable into the ithml file.
+I used phplib for database abstraction and templating.  The templates had the effect of splitting the view into two files:  
+<ol>
+<li>The _included_ html (files ending in .ihtml) </li><li>and the php file to feed variable into the ithml file.</li></ol>
 This enabled me to completely remove html from the logic; however, it also made it tempting to put logic into the php file that called the view.
 
 The PHP-LIB folder is not included in this repo
