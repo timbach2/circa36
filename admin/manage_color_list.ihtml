@@ -1,0 +1,15 @@
+<table width="50%">
+	<tr>
+		<td><a href="{[self]}?action=input">Enter New Color</a></td>
+		<td><a href="{[self]}?init">Choose Line</a></td>
+	</tr>
+</table>
+<h3>List of {[line_name]} Colors</h3>
+<table width="60%" border="0" cellspacing="0" cellpadding="0">
+<!-- BEGIN ItemList -->
+	<tr class="{[class]}">
+		<td><a href="{[self]}?action=modify&id={[id]}">{[color]}</a></td>
+		<td><a href="{[self]}?action=delete&id={[id]}" onclick="confirm('Delete item or color?');">delete</a></td>
+	</tr>
+<!-- END ItemList -->
+</table>

@@ -1,0 +1,54 @@
+<!-- display.ihtml -->
+<table width="100%">
+	<tr>
+		<td valign="top">
+			<table width="100%" cellspacing="0" border="1">
+				<!-- <tr BGCOLOR=#009797> -->
+				<tr BGCOLOR=#20b7b7>
+					<td align="center"><h2>{[item_name]}</h2></td>
+				</tr>
+				<tr BGCOLOR=#20b7b7>
+					<td align="center">{[item_number]}</td>
+				</tr>
+			</table>
+			<blockquote>{[item_description]} 3 day return,  your satisfaction is <a href="/c36/about/guarantee">guaranteed</a></blockquote>
+			<form method="post" action="/c36/cart/add/{[id]}">
+			<table>
+				<tr>
+					<td>Price: </td>
+					<td align="right">{[price]}</td>
+				</tr>
+				<tr>
+					<td>Shipping: <img src="/images/upsyes.gif" width="19" height="24"></td>
+					<td align="right">{[shipping]}</td>
+				</tr>
+				<tr>
+					<td>Total: </td>
+					<td align="right">{[total]}</td>
+				</tr>
+			</table>
+			<br>
+			<table width="100%">
+				<tr>
+					<td width="50%" align="center"><!-- BEGIN ShowAdd --><input type="submit" name="add_to_cart" value="Add to Cart"><!-- END ShowAdd --></td>
+					<td width="50%" align="center"><input type="button" name="view_cart" value="View Cart" onClick="javascript: location.href='/c36/cart'"></td>
+				</tr>
+			</table>
+			<input type="hidden" name="id" value="{[id]}">
+			</form>
+		</td>
+		<td valign="top" align="center">
+		<img src="/images/header1.gif" width="325" height="19"><br />
+		<img src="/image.php?id={[id]}" width="{[width]}" height="{[height]}" border="1" alt="{[item_name]}">
+		<!-- <img src="image.php?id={[id]}" width="250" height="250"> -->
+		</td>
+	</tr>
+</table>
+<br /><br />
+<!-- Begin PayPal Logo -->
+<div align="center">
+<A HREF="https://www.paypal.com/affil/pal=george%40circa36.com" target="_blank"><IMG SRC="http://images.paypal.com/images/lgo/logo1.gif" BORDER="0" ALT="I accept payment through PayPal!, the #1 online payment service!"></A>
+</div>
+<!-- End PayPal Logo -->
+<br /><br />
+	

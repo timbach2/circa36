@@ -1,0 +1,62 @@
+<h2 align="center">Thank you for your order!</h2>
+<table width="100%">
+	<tr>
+		<td align="center" valign="top">
+			<table border="0" cellpadding="10" cellspacing="0" align="center">
+				<tr>
+
+					<td><font face="verdana,arial,helvetica" size="3"><b>To purchase with check or money order, send to:</b></font></td>
+				</tr>
+				<tr>
+					<td>
+						<address>
+						Circa36 Fiesta<br>
+						3500 E. Sunshine<br>
+
+						Springfield, MO 65809
+						</address>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td align="center">
+<!-- PayPal Logo -->
+
+			<table border="0" cellpadding="10" cellspacing="0" align="center">
+				<tr>
+
+					<td><font face="verdana,arial,helvetica" size="3"><b>Pay me securely with any major credit card through PayPal!</b></font>
+					</td>
+				</tr>
+				<tr>
+					<td align="center">
+						<!-- <form action="https://www.paypal.com/cgi-bin/webscr" method="post"> -->
+						<form action="http://www.circa36.com/paypal_redirect.php" method="get">
+						<input type="hidden" name="cmd" value="_xclick">
+
+						<input type="hidden" name="business" value="george@circa36.com">
+						<input type="hidden" name="item_name" value="Circa 36 Order (Total Invoice Amount)">
+						<input type="hidden" name="item_number" value="">
+						<input type="hidden" name="amount" value="{[grand_total]}">
+						<input type="hidden" name="no_note" value="1">
+						<input type="hidden" name="currency_code" value="USD">
+						<!-- <input type="image" src="https://www.paypal.com/images/x-click-but01.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">-->
+						<!-- <input type="image" src="http://images.paypal.com/images/lgo/logo3v.gif" border="0" alt="Pay me securely with any major credit card through PayPal!" title="Pay me securely with any major credit card through PayPal!"> -->
+						<input type="image" src="http://www.circa36.com/images/paynow.gif" border="0" alt="Pay me securely with any major credit card through PayPal!" title="Pay me securely with any major credit card through PayPal!">
+
+						</form>
+						<!-- <img src="http://images.paypal.com/images/lgo/logo3v.gif" border="0" alt="Pay me securely with any major credit card through PayPal!" title="Pay me securely with any major credit card through PayPal!"> -->
+
+					</td>
+				</tr>
+				<tr>
+					<td align="center"><img src="http://images.paypal.com/images/icon_visa.gif" border="0" alt="Visa"> <img src="http://images.paypal.com/images/icon_mastercard.gif" border="0" alt="MasterCard"> <img src="http://images.paypal.com/images/icon_discover.gif" border="0" alt="Discover"> <img src="http://images.paypal.com/images/icon_amex.gif" border="0" alt="American Express"> <img src="http://images.paypal.com/images/icon_echeck.gif"alt="eCheck" border="0">
+					</td>
+
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+			<!-- End PayPal Logo -->
+<br>

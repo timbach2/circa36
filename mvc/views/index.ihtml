@@ -1,0 +1,69 @@
+<!-- index.ihtml -->
+<table width="100%">
+	<tr>
+		<td valign="top">
+			<table cellspacing="0" cellpadding="5" border="1">
+				<tr>
+					<td valign="top" class="turq">
+						<h4>Search for an item:</h4>
+						<div><small>(within description and title)</small></div>
+						<form action="/c36/search" method="get">
+						<input type="text" name="searchQuery"> 
+						<input type="hidden" name="set_search_type" value="fulltext">
+						<input type="submit" value="Go"><br>
+						</form>
+					</td>
+					<td valign="top" class="ltgreen">
+						<h4>Advanced Fiesta &#174; Search</h4>
+						<div><small>Find a certain color</small></div>
+						<form action="/c36/search" method="get">
+						<select name="color">
+							<option value="0" selected="selected">All Colors</option>
+							<!-- BEGIN ColorOption --><option value="{[option]}"{[selected]}>{[description]}</option> 
+							<!-- END ColorOption -->
+						</select>
+						<div>&nbsp;</div>
+						<div><small>Find a certain item</small></div>
+						<select name="item">
+							<option value="0" selected="selected">All Items</option>
+							<!-- BEGIN ItemOption --><option value="{[option]}"{[selected]}>{[description]}</option> 
+							<!-- END ItemOption -->
+						</select>
+						<input type="hidden" name="set_search_type" value="AFS">
+						<input type="submit" value="Go">
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td class="ivory">
+						<form action="/c36/search" method="get">
+						<h4>Search for a Specific Line</h4>
+						<select name="line">
+							<!-- BEGIN LineOption --><option value="{[option]}"{[selected]}>{[description]}</option> 
+							<!-- END LineOption -->
+						</select>
+						<input type="submit" value="Go">
+						<input type="hidden" name="set_search_type" value="line">
+						</form>
+					</td>
+					<td class="header_yellow">
+						<form action="/c36/search" method="get">
+						<h4>Search by Item Number</h4>
+						<div>C36<input type="text" name="id" size="8"></div>
+						<div><input type="submit" value="Go"></div>
+						<input type="hidden" name="set_search_type" value="item">
+						</form>
+					</td>
+				</tr>
+			</table>
+		</td>
+		<td>&nbsp;</td>
+		<td valign="top">
+		<div>{[date]}</div>
+		<div>&nbsp;</div>
+		<div>Welcome to Circa 36.  Inventory currently displays {[number_of_items]} items available.</div>
+		<div>&nbsp;</div>
+		<div>{[article]}</div>
+		</td>
+	</tr>
+</table>

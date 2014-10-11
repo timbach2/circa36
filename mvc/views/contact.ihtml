@@ -1,0 +1,29 @@
+<!-- contact.ihtml -->
+<!-- BEGIN ContactForm -->
+<form action="/c36/about/contact" method="post">
+<h3>Contact Us</h3>
+<table>
+	<tr>
+		<td valign="top">Your email: </td>
+		<td valign="top"><input type="text" name="from" size="30">
+		<td valign="top"><input type="submit" value="Send Email"></td>
+	</tr>
+	<tr>
+		<td valign="top">Subject: </td>
+		<td valign="top"><input type="text" name="subject" size="30">
+		<td></td>
+	</tr>
+	<tr>
+		<td valign="top">Message: </td>
+		<td valign="top" colspan="2"><textarea name="message" cols="60" rows="10"></textarea></td>
+	</tr>
+</table>
+</form>
+<br>
+<!-- END ContactForm -->
+<!-- BEGIN ContactThanks -->
+<h3>Thank You</h3>
+<div>Your email has been sent.  I will get back to you as soon as possible</div>
+<br>
+<div>geo</div>
+<!-- END ContactThanks -->

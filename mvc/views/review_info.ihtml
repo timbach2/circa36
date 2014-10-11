@@ -1,0 +1,37 @@
+<table width="75%" align="center">
+	<tr>
+		<th>Personal Info</th>
+
+		<th>Shipping Info</th>
+	</tr>
+	<tr>
+		<td>{[name]}</td>
+		<td>{[ship_name]}</td>
+	</tr>
+	<tr>
+		<td>{[address]}</td>
+		<td>{[ship_address]}</td>
+	</tr>
+	<tr>
+		<td>{[city]}, {[state]}</td>
+		<td>{[ship_city]} {[ship_state]}</td>
+	</tr>
+	<tr>
+		<td>{[zip]}</td>
+
+		<td>{[ship_zip]}</td>
+	</tr>
+	<tr>
+		<td>{[email]}</td>
+		<td></td>
+	</tr>
+</table>
+<br />
+<form action="/c36/cart/process" method="get">
+<table width="75%" align="center">
+	<tr>
+		<td><input type="button" value="Change Info" onClick="javascript: location.href='/c36/cart/info'"></td>
+		<td><input type="submit" value="Complete Order"></td>
+	</tr>
+</table>
+</form>

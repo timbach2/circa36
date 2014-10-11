@@ -1,0 +1,16 @@
+<h3>Announcement List</h3>
+<a href="{[self]}?action=new">Add New Announcement</a><br>
+<table align="center" width="95%" cellspacing="0" cellpadding="3" border="0">
+	<tr class="header_yellow">
+		<th>Date</th>
+		<th>Sample Text</th>
+		<th>Action</th>
+	</tr>
+<!-- BEGIN ListRow -->
+	<tr class="{[class]}">
+		<td>{[date]}</td>
+		<td>{[sample_text]}</td>
+		<td><small><a href="{[self]}?action=edit&id={[id]}">edit</a>&nbsp;<a href="{[self]}?action=delete&id={[id]}" onclick="confirm('delete announcement?');">delete</a></small></td>
+	</tr>
+<!-- END ListRow -->
+</table>

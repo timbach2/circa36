@@ -1,0 +1,52 @@
+<?php
+include('admin_header.php');
+$T->set_var('page_title','upload a picture');
+
+$T->set_file('form','upload.ihtml');
+$T->set_var('self',$PHP_SELF);
+
+$db = new DB_C36;
+if($_POST['submit']) {
+	
+	/* added for mogrification (mogrify didn't have resize, using convert */
+	$size = GetImageSize("$form_data"); 
+	$max = 300;
+	$image_width = $size[0];
+	$image_height= $size[1];
+	if($image_height>$max || $image_width>$max) {
+		if($image_hight>$image_width) {
+			$sizefactor = (double)($max/$image_height);
+		} else {
+			$sizefactor = (double)($max/$image_width);
+		}
+		$newwidth = (int)($image_width*$sizefactor);
+		$newheight= (int)($image_height*$sizefactor);
+		
+		$newsize = $newwidth . "x" . $newheight;
+		$cmd = "/usr/X11R6/bin/convert -geometry $newsize " . 			// path and command to mogrify
+			  "$form_data " . 	// upload path
+			  "$form_data " . 	// upload path
+			  "2>&1"; 									// redirect STDERR to STDOUT
+		exec($cmd,$exec_output,$exec_retval);
+		if($exec_retval>0) {
+			print "ERROR: exec() error: $exec_output[0]";
+		} else {
+			print "Image was resized from " . $image_width . "x" . 
+				$image_height . " to $newsize :)<br>";
+			$image_height = $newheight;
+			$image_width  = $newwidth;
+		}
+	}
+	// end mogrification 
+
+	$data = addslashes(fread(fopen($form_data,"r"), filesize($form_data)));
+	$db->query("insert into sale_items (description,bin_data,filewidth,fileheight,filetype) " . 
+			"values('$form_description','$data','$image_width','$image_height','$form_data_type')");
+	$id = mysql_insert_id();
+	print "This file has the following Database ID: <b>$id</b>";
+} 
+$T->set_var('body',$T->parse('output','form'));
+
+$T->pparse('output','header');
+page_close();
+?>

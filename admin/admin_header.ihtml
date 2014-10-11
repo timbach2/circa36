@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>{[page_title]}</title>
+<link rel="stylesheet" href="/circa36.css" type="text/css">
+</head>
+<body>
+<table width="100%">
+	<tr>
+		<td align="center"><a href="upload.php"><small>Upload Pics</small></a></td>
+		<td align="center"><a href="index.php"><small>For Sale List</small></a></td>
+		<td align="center"><a href="announcements.php"><small>Announcements</small></a></td>
+		<td align="center"><a href="new_user.php"><small>User Mgmt</small></a></td>
+		<td align="center"><a href="logout.php"><small>Log Out</small></a></td>
+	</tr>
+	<tr>
+		<td align="center"><a href="manage_items.php"><small>Item Properties</small></a></td>
+		<td align="center"><a href="manage_colors.php"><small>Color Properties</small></a></td>
+		<td align="center"><a href="manage_lines.php"><small>Line Properties</small></a></td>
+		<td align="center"><a href="article.php"><small>Index Article</small></a></td>
+		<td align="center"><a href="review_orders.php"><small>View Orders</small></a></td>
+	</tr>
+</table>
+<br>
+{[body]}
+</body>
+</html>

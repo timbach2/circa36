@@ -1,0 +1,2 @@
+User-agent: *
+Disallow: /c36/cart

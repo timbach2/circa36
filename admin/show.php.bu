@@ -1,0 +1,13 @@
+<html>
+<head>
+<title>Sample uploaded pictures</title>
+</head>
+<body>
+<form method="get">
+Please select id for picture: <input type="text" name="id" size="5">
+<input type="submit">
+<div align="right"><a href="upload.php">Upload</a> a picture</div>
+<hr>
+<img src="image.php?id=<? echo $id; ?>">
+</body>
+</html>

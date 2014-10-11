@@ -1,0 +1,75 @@
+<html>
+<head>
+<title>{[page_title]}</title>
+
+<meta name="keywords" value="{[meta_keywords]}" />
+<meta name="description" value="{[meta_description]}" />
+
+<link rel="stylesheet" href="/circa36.css" type="text/css" />
+<link rel="stylesheet" href="/chrometheme/chromestyle.css" type="text/css" />
+<link rel="shortcut icon" href="/favicon.ico" />
+
+<script type="text/javascript" src="/chromejs/chrome.js">
+
+/***********************************************
+* Chrome CSS Drop Down Menu- © Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+</head>
+<body>
+
+<div id="chromemenu">
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/c36/about" onMouseover="cssdropdown.dropit(this,event,'dropmenu_about')">About Circa 36</a></li>
+<li><a href="/c36/announcements">Announcements</a></li>
+<!--
+<li><a href="#" onMouseover="cssdropdown.dropit(this,event,'dropmenu_user')">User Services</a></li>	
+ -->
+<li><a href="/c36/sitemap">Site Map</a></li>
+<li><a href="/c36/reference">Reference Books</a></li>	
+<li><a href="/c36/cart">View Cart</a></li>	
+</ul>
+</div>
+
+<div id="dropmenu_about" class="dropmenudiv">
+<a href="/c36/about/orderinfo">Order Info</a>
+<a href="/c36/about/guarantee">Guarantee</a>
+<a href="/c36/about/acquisitions">Acquisitions</a>
+<a href="/c36/about/contact">Contact Us</a>
+</div>
+
+<div id="dropmenu_user" class="dropmenudiv">
+<!--
+<a href="/c36/services/mb">Message Board</a>
+<a href="/c36/services/auction">Auction</a>
+<a href="/c36/services/mp">Marketplace</a>
+<a href="/c36/services/chat">Chat</a>
+<a href="/c36/services/mg">MG Gallery</a>
+-->
+</div>
+
+<!-- logo -->
+<table border="0" width="100%">
+	<tr>
+		<td width="*"><img src="/images/c36_logo_tm.gif" name="logo" alt="Circa 36 buys and sells Fiesta &#174;" /></td>
+<!-- BEGIN ImageRotate -->
+		<td valign="{[valign]}" align="{[align]}"><img src="{[src]}" width="{[width]}" height="{[height]}" /><br /><br /></td>
+<!-- END ImageRotate -->
+	</tr>
+</table>
+
+{[page_body]}
+
+<!-- legal stuff, must keep lawyers happy -->
+<br clear="both" />
+<br />
+<div class="trademark">
+<p>Fiesta &#174;, Genuine Fiesta &#174; Accessories, Harlequin &#174;, the dancing lady logo and THE HOMER LAUGHLIN CHINA COMPANY are trademarks of the Homer Laughlin China Company.</p>
+<p><i>Circa 36 is not affiliated with or endorsed or sponsored by the Homer Laughlin China Company.</i></p>
+</div>
+</body>
+</html>

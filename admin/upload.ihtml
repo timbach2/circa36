@@ -1,0 +1,8 @@
+	<form method="post" action="{[self]}" enctype="multipart/form-data">
+	<input type="hidden" name="MAX_FILE_SIZE" value="1000000">
+	<br>File to upload/store in database:<br>
+	<input type="file" name="form_data" size="40">
+	<input type="hidden" name="action" value="upload">
+	<p><input type="submit" name="submit" value="Upload">
+	</form>
+	<p><a href="show.php">Display</a> a selected image

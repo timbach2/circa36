@@ -1,0 +1,46 @@
+<!-- orderinfo.ihtml -->
+<table border=1 cellspacing=0 width="100%" bgcolor="green" align="center">
+<tr>
+<td align=center width="100%"><div class="white">Easy Ordering Procedures<div></td>
+</tr>
+</table>
+<P>
+Ordering anything you see here is very easy.&nbsp;  Let me list a few helpful guidelines.
+<UL>
+<LI>  All orders are confirmed through the shopping cart feature.  This is necessary because it controls database functions that determine availability.  It also provides bookkeeping functions and makes it possible to maintain a larger inventory.<P>
+
+<!-- All items for sale are available on a first come first served basis.&nbsp; (Earliest checkout timestamp).&nbsp; If the item doesn't have a  <FONT COLOR="red"><B>....SOLD</B></FONT COLOR="red">&nbsp;sign on it, its available for purchase.<P> -->
+<LI>  All prices are firm unless noted, and all transactions are in U.S dollars.&nbsp;The address for sending your payment is: <P>
+<div><address>Circa36<br>3500 E. Sunshine<br>Springfield, MO 65809</address></div><P>For your convenience it is listed again upon checkout<P>
+<LI>  All sales to Missouri residents are subject to 6.6% sales tax.<P>
+<LI>  Shipping and insurance charges are calculated for delivery in the continental U.S.
+         and apply to all transactions.&nbsp;  Shipping charges are automatically discounted for multiple purchases.  You will pay the full shipping price listed on your highest shipping cost item.  All additional items will be discounted 50% from the original listed shipping fee.  Shipments to Alaska and Hawaii are surcharged $10 per order, over and above what is listed on your shopping cart.&nbsp;  All sales are confined to USA.&nbsp; <u>No</u> international shipments will be made. <P>
+
+<LI>  Personal checks are always honored.&nbsp;  However, if it's your first purchase please allow 
+        adequate time for your check to clear, usually less than 10 business days.&nbsp;  A money
+        order will expedite delivery. <P> 
+<LI>  My preferred method of shipment is U.P.S.  unless you have a Post Office box address.&nbsp;
+         I can ship U.S. mail if you request it.<P>
+<LI>  Ordering is done by shopping cart.&nbsp; When you complete the order, you will receive an email confirmation and a duplicate will be emailed to Circa36.  
+
+<LI>   Your satisfaction is <A HREF="/c36/about/guarantee">guaranteed.</A>&nbsp;You always have a 3 day return privilege on any purchase.&nbsp; <P>
+<!--
+<LI>   No credit cards are accepted.&nbsp;  Your personal check is welcome and money orders preferred.</B><P>
+-->  
+<LI><!-- Begin Official PayPal Seal -->
+<A HREF="https://www.paypal.com/verified/pal=george%40circa36.com" target="_blank"><IMG SRC="http://images.paypal.com/images/verification_seal.gif" BORDER="0" ALT="Official PayPal Seal"></A>
+<!-- End Official PayPal Seal -->
+<!-- Begin Official PayPal Seal -->
+<A HREF="https://www.paypal.com/verified/pal=george%40circa36.com" target="_blank"><FONT size="2" face="verdana, arial, helvetica"><B>I'm PayPal Verified</B></FONT></A>
+<!-- End Official PayPal Seal -->
+</UL>
+<p><B>Thanks for visiting my page!&nbsp;  Money orders and personal checks should be made payable to:</B><p><BR>
+
+<center><table border=1 cellspacing=0 width="40%" bgcolor="#EECC9D">
+<tr>
+<td align=center width="40%"><div align="center"><b>
+	<A NAME="visiting">Circa '36 &nbsp;</A>  <BR>  3500 E. Sunshine St.&nbsp;   <BR>Springfield, Mo.&nbsp; 65809</b></div></td></table>
+
+
+<BR>
+

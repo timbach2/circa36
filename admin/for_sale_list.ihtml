@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="../c36.css" type="text/css">
+<style>
+<!--
+a.paginator:link {color: #0000ff; font-size: 11px; text-decoration: none}
+a.paginator:visited {color: #0000ff; font-size: 11px; text-decoration: none}
+a.paginator:hover {color: #ff0000; font-size: 11px; text-decoration: underline}
+
+.slateblue { font-size: 11px; font-family: sans-serif; color: #ffcc00; background-color: #336699; }
+a.slateblue:link { color: #ffcc00; }
+a.slateblue:visited { color: #ffcc00; }
+a.slateblue:hover { color: #ffcc00; }
+
+
+.highlight { background-color: yellow; }
+
+-->
+</style>
+
+<script language="javascript">
+
+// none of these seem to be working, so just do it the old-fashioned way...
+
+function forward(id) {
+	//alert('should be redirecting...');
+	//var address="/admin/index.php?action=modify&id="+id;
+	//location.href=address;
+}
+function reset_id(id) {
+	//var address="/admin/index.php?action=reset&id="+id;
+	//location.href=address;
+}
+</script>
+<table width="90%">
+	<tr>
+		<td>
+			<form method="get" action="/admin/index.php" onsubmit="forward(this.form.id.value)">
+			<small>Go To an Item.  Input ID: <input type="text" name="id" size="7">
+			<input type="hidden" name="action" value="modify">
+			<input type="submit" value="Go">
+			</small></form>
+		</td>
+		<td>
+			<form method="get" action="/admin/index.php"><small>
+			Reset an Item (restock).  Input ID: <input type="text" name="id" size="7">
+			<input type="hidden" name="action" value="reset">
+			<input type="submit" value="Go" onclick="reset_id(this.form.id.value)">
+			</small></form>
+		</td>
+	</tr>
+</table>
+<br>
+<p class="darkRow">Page: {[paginator]}</p>
+
+<table width="100%" cellpadding="5" cellspacing="0" border="0">
+	<tr class="slateblue">
+		<th><a class="slateblue" href="{[self]}?sort_by=item">Item</a></th>
+		<th><a class="slateblue" href="{[self]}?sort_by=title">Title</a></th>
+		<th>Description</th>
+		<th colspan="2"><a class="slateblue" href="{[self]}?sort_by=action">Action</a></th>
+	</tr>
+<!-- BEGIN ForSaleList -->
+	<tr class="{[class]}">
+		<!-- <td valign="top"><a href="{[self]}?action=modify&id={[id]}">{[iter]}. </a></td> -->
+		<td valign="top"><a href="{[self]}?action=modify&id={[id]}">{[id]} </a></td>
+		<td valign="top"><a href="{[self]}?action=modify&id={[id]}">{[item]}</a></td>
+		<td valign="top">{[description]}</td>
+		<td valign="top"><a href="{[self]}?action=delete&id={[id]}" onclick="return confirm('DELETE ITEM.  Are you sure?');">delete</a> </td>
+		<td valign="top"><!-- BEGIN ResetSold --><a href="{[self]}?action=reset&id={[id]}" onclick="return confirm('Reset Item from sold to new?');"> reset</a><!-- END ResetSold --></td>
+	</tr>
+<!-- END ForSaleList -->
+</table>
+<p class="darkRow">Page: {[paginator]}</p>
+<table width="30%">
+	<tr>
+		<td width="50%" align="center"><a href="{[self]}?action=previous&count={[start]}">{[prev]}</a></td>
+		<td width="50%" align="center" colspan="2"><a href="{[self]}?action=next&count={[end]}">{[next]}</a></td>
+	</tr>
+</table>

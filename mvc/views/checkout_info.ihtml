@@ -1,0 +1,266 @@
+<h3>{[message]}</h3>
+<script Language="JavaScript">
+function isEmailAddr(email)
+{
+  var result = false;
+  var theStr = new String(email);
+  var index = theStr.indexOf("@");
+  if (index > 0)
+  {
+    var pindex = theStr.indexOf(".",index);
+    if ((pindex > index+1) && (theStr.length > pindex+1))
+	result = true;
+  }
+  return result;
+}
+
+function validRequired(formField,fieldLabel)
+{
+	var result = true;
+	
+	if (formField.value == "")
+	{
+		alert('Please enter a value for the "' + fieldLabel +'" field.');
+		formField.focus();
+		result = false;
+	}
+	
+	return result;
+}
+
+function allDigits(str)
+{
+	return inValidCharSet(str,"0123456789");
+}
+
+function inValidCharSet(str,charset)
+{
+	var result = true;
+
+	// Note: doesn't use regular expressions to avoid early Mac browser bugs	
+	for (var i=0;i<str.length;i++)
+		if (charset.indexOf(str.substr(i,1))<0)
+		{
+			result = false;
+			break;
+		}
+	
+	return result;
+}
+
+function validEmail(formField,fieldLabel,required)
+{
+	var result = true;
+	
+	if (required && !validRequired(formField,fieldLabel))
+		result = false;
+
+	if (result && ((formField.value.length < 3) || !isEmailAddr(formField.value)) )
+	{
+		alert("Please enter a complete email address in the form: yourname@yourdomain.com");
+		formField.focus();
+		result = false;
+	}
+   
+  return result;
+
+}
+
+function validNum(formField,fieldLabel,required)
+{
+	var result = true;
+
+	if (required && !validRequired(formField,fieldLabel))
+		result = false;
+  
+ 	if (result)
+ 	{
+ 		if (!allDigits(formField.value))
+ 		{
+ 			alert('Please enter a number for the "' + fieldLabel +'" field.');
+			formField.focus();		
+			result = false;
+		}
+	} 
+	
+	return result;
+}
+
+
+function validInt(formField,fieldLabel,required)
+{
+	var result = true;
+
+	if (required && !validRequired(formField,fieldLabel))
+		result = false;
+  
+ 	if (result)
+ 	{
+ 		var num = parseInt(formField.value,10);
+ 		if (isNaN(num))
+ 		{
+ 			alert('Please enter a number for the "' + fieldLabel +'" field.');
+			formField.focus();		
+			result = false;
+		}
+	} 
+	
+	return result;
+}
+
+
+function validDate(formField,fieldLabel,required)
+{
+	var result = true;
+
+	if (required && !validRequired(formField,fieldLabel))
+		result = false;
+  
+ 	if (result)
+ 	{
+ 		var elems = formField.value.split("/");
+ 		
+ 		result = (elems.length == 3); // should be three components
+ 		
+ 		if (result)
+ 		{
+ 			var month = parseInt(elems[0],10);
+  			var day = parseInt(elems[1],10);
+ 			var year = parseInt(elems[2],10);
+			result = allDigits(elems[0]) && (month > 0) && (month < 13) &&
+					 allDigits(elems[1]) && (day > 0) && (day < 32) &&
+					 allDigits(elems[2]) && ((elems[2].length == 2) || (elems[2].length == 4));
+ 		}
+ 		
+  		if (!result)
+ 		{
+ 			alert('Please enter a date in the format MM/DD/YYYY for the "' + fieldLabel +'" field.');
+			formField.focus();		
+		}
+	} 
+	
+	return result;
+}
+
+function cycle(theForm) {
+	alert("theForm.elements.length = "+theForm.elements.length);
+    var answer = '';
+    for (var i = 0; i<theForm.elements.length; i++) {
+        //answer += theForm.elements[i].value + ' ';
+        alert("iteration: "+i+" = "+theForm.elements[i].value);
+    }
+}
+
+function validateForm(theForm)
+{
+
+//cycle(theForm);
+
+	// Customize these calls for your form
+
+	// Start ------->
+	if (!validRequired(theForm.elements[0],"Name"))
+		return false;
+
+	if (!validRequired(theForm.elements[1],"Shipping Address"))
+		return false;
+
+	if (!validRequired(theForm.elements[2],"City"))
+		return false;
+
+	if (!validRequired(theForm.elements[3],"State"))
+		return false;
+
+	if (!validRequired(theForm.elements[4],"Zip"))
+		return false;
+
+	if (!validEmail(theForm.elements[5],"Email",true))
+		return false;
+
+	//if (!validDate(theForm.available,"Date Available",true))
+	//	return false;
+
+	//if (!validNum(theForm.yearsexperience,"Years Experience",true))
+	//	return false;
+	// <--------- End
+	
+	return true;
+}
+</script>
+ 
+<form action="/c36/cart/save_info" method="post" onsubmit="return validateForm(this)">
+<!-- BEGIN PersonalInfo -->
+<table>
+	<tr>
+		<td>Name: </td>
+		<td><input type="text" name="info[name]" value="{[name]}" size="50"></td>
+	</tr>
+	<tr>
+		<td>Shipping Address: </td>
+		<td><input type="text" name="info[addr1]" value="{[addr1]}" size="50"></td>
+	</tr>
+<!--	<tr>
+		<td>Shipping Address2: </td>
+		<td><input type="text" name="info[addr2]" value="{[addr2]}" size="50"></td>
+	</tr>
+-->	
+	<tr>
+		<td>City: </td>
+		<td><input type="text" name="info[city]" value="{[city]}" size="20"></td>
+	</tr>
+	<tr>
+		<td>State: </td>
+		<td><select name="info[state]"><!-- BEGIN OptionList -->
+			<option value="{[value]}"{[selected]}>{[option]}</option><!-- END OptionList -->
+			 </select>
+			 </td>
+	</tr>
+	<tr>
+		<td>Zip: </td>
+		<td><input type="text" name="info[zip]" value="{[zip]}" size="8"></td>
+	</tr>
+	<tr>
+		<td>Email: </td>
+		<td><input type="text" name="info[email]" value="{[email]}" size="20"></td>
+	</tr>
+</table>
+<!-- END PersonalInfo -->
+<hr>
+<!-- BEGIN ShippingInfo -->
+<h3>Shipping Info, if different from purchaser info</h3>
+<table>
+	<tr>
+		<td>Name: </td>
+		<td><input type="text" name="ship_to[name]" value="{[name]}" size="50"></td>
+	</tr>
+	<tr>
+		<td>Shipping Address: </td>
+		<td><input type="text" name="ship_to[addr1]" value="{[addr1]}" size="50"></td>
+	</tr>
+<!--	<tr>
+		<td>Shipping Address2: </td>
+		<td><input type="text" name="ship_to[addr2]" value="{[addr2]}" size="50"></td>
+	</tr>
+-->	
+	<tr>
+		<td>City: </td>
+		<td><input type="text" name="ship_to[city]" value="{[city]}" size="20"></td>
+	</tr>
+	<tr>
+		<td>State: </td>
+		<td><select name="ship_to[state]"><option value=''> </option><!-- BEGIN OptionList2 -->
+			<option value="{[value]}"{[selected]}>{[option]}</option><!-- END OptionList2 -->
+			 </select>
+			 </td>
+	</tr>
+	<tr>
+		<td>Zip: </td>
+		<td><input type="text" name="ship_to[zip]" value="{[zip]}" size="8"></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="submit" name="continue_to_page3" value="Review Order">
+	</tr>
+</table>
+<!-- END ShippingInfo -->
+</form>

@@ -1,0 +1,44 @@
+<!-- search_list.ihtml -->
+<a name="top"></a>
+<table cellspacing="0" cellpadding="0" border="1" width="90%" align="center"><tr><td>
+<!-- BEGIN SearchResults -->
+<table cellspacing="0" cellpadding="3" border="0" width="100%">
+	<tr class="header_yellow">
+		<th colspan="2">Picture<br /><a href="{[self]}?show_hide={[toggle_show_hide]}&search_type={[search_type]}&searchQuery={[searchQuery]}&color={[color]}&item={[item]}&count={[count]}&id={[search_id]}"><small>{[toggle_show_hide]}</small></a></th>
+		<th>Line</th>
+		<th>Description</th>
+		<th>Price</th>
+	</tr>
+<!-- BEGIN SearchList -->
+	<tr class="{[class]}">
+		<td class="{[class]}" valign="top"><!-- BEGIN ShowPic --><a href="display/{[id]}"><img src="/thumb.php?id={[id]}" border="0" height="{[img_height]}" width="{[img_width]}"></a><!-- END ShowPic --></td>
+		<td>&nbsp;<br>&nbsp;</td>
+		<td class="{[class]}" valign="top">{[line]}</td>
+		<td class="{[class]}" valign="top"><a href="display/{[id]}">{[title]}</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!-- BEGIN NewSold --><img src="./images/new.gif" width="28" width="11"><!-- END NewSold --></td>
+		<td class="{[class]}" valign="top" align="right" nowrap="nowrap"><nowrap>{[price]}&nbsp;&nbsp;</nowrap></td>
+	</tr>
+<!-- END SearchList -->
+	<tr>
+		<td colspan="5" align="center">
+			<table width="75%">
+				<tr>
+					      <td width="25%" align="center"><a href="{[self]}?action=previous&count={[start]}&search_type={[search_type]}&searchQuery={[searchQuery]}&color={[color]}&item={[item]}&line={[line]}&show_hide={[show_hide]}">{[prev]}</a></td>
+					<td width="25%" align="center" colspan="2"><a href="{[self]}?action=next&count={[end]}&search_type={[search_type]}&searchQuery={[searchQuery]}&color={[color]}&item={[item]}&line={[line]}&show_hide={[show_hide]}">{[next]}</a></td>
+					<td width="50%" align="right"><a href="{[self]}#top">top</a></td>
+				</tr>
+			</table>
+		
+		
+		
+	</tr>
+</table>
+<!-- END SearchResults -->
+<br />
+</td></tr></table>
+<br /><br />
+<!-- Begin PayPal Logo -->
+<div align="center">
+<A HREF="https://www.paypal.com/affil/pal=george%40circa36.com" target="_blank"><IMG SRC="http://images.paypal.com/images/lgo/logo1.gif" BORDER="0" ALT="I accept payment through PayPal!, the #1 online payment service!"></A>
+</div>
+<!-- End PayPal Logo -->
+<br /><br />

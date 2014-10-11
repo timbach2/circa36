@@ -1,0 +1,104 @@
+<html>
+<head>
+<!--
+This file retrieved from the JS-Examples archives
+http://www.js-examples.com
+1000s of free ready to use scripts, tutorials, forums.
+Author: Jerome Caron - 0
+-->
+
+<SCRIPT LANGUAGE="JavaScript"> 
+<!-- Begin 
+team = new Array( 
+				new Array( // team 1
+					new Array("Saku Koivu", 39482304), 
+					new Array("Martin Rucinsky", 34802389), 
+					new Array("Jeff Hackett", 39823498), 
+					new Array("Sheldon Sourray", 87587343), 
+					new Array("Richard Zednik", 68798735), 
+					new Array("Brian Savage", 98098509), 
+					new Array("Stephane Robidas", 49490583), 
+					new Array("Patrice Brisebois", 32898334), 
+					new Array("Oleg Petrov", 92340934), 
+					new Array("Chad Kilger", 34923409), 
+					new Array("Benoit Brunet", 59384093), 
+					new Array("Jan Bulis", 83948023), 
+					new Array("Patrick Traverse", 41239812), 
+					new Array("Jose Theodore", 98402398), 
+					new Array("Craig Darby", 82393434), 
+					new Array("Patric Poulin", 34290348), 
+					new Array("Karl Dykhuis", 89092834) 
+				), 
+				new Array(  // team 2
+					new Array("Mario Lemieux", 23840238), 
+					new Array("Jaromir Jagr", 92390484), 
+					new Array("Robert Lang", 29048203), 
+					new Array("Alexei Kovalev", 94098230), 
+					new Array("Jean-Sebastien Aubin", 39234923), 
+					new Array("Kevin Stevens", 29345423) 
+				), 
+null, 
+new Array( 
+new Array("Alexei Yashin", 20394802), 
+new Array("Daniel Alfredson", 34982039), 
+new Array("Marian Hossa", 92348902), 
+new Array("Patrick Lalime", 98203894), 
+new Array("Radek Bonk", 98234902) 
+) 
+); 
+
+
+function fillSelectFromArray(selectCtrl, itemArray, goodPrompt, badPrompt, defaultItem) { 
+var i, j; 
+var prompt; 
+// empty existing items 
+for (i = selectCtrl.options.length; i >= 0; i--) { 
+	selectCtrl.options[i] = null; 
+} 
+j = 0;
+/*prompt = (itemArray != null) ? goodPrompt : badPrompt; 
+if (prompt == null) { 
+	j = 0; 
+} 
+else { 
+	selectCtrl.options[0] = new Option(prompt); 
+	j = 1; 
+} 
+*/
+//alert("var j = "+j);
+if (itemArray != null) { 
+// add new items 
+	for (i = 0; i < itemArray.length; i++) { 
+		selectCtrl.options[j] = new Option(itemArray[i][0]); 
+		if (itemArray[i][1] != null) { 
+		selectCtrl.options[j].value = itemArray[i][1]; 
+	} 
+	j++; 
+} 
+// select first item (prompt) for sub list 
+selectCtrl.options[0].selected = true; 
+  } 
+} 
+//  End --> 
+</script> 
+
+
+</head>
+<body>
+<FORM NAME="main"> 
+<SELECT NAME="Make" onChange="fillSelectFromArray(this.form.Team, ((this.selectedIndex == -1) ? null : team[this.selectedIndex-1]));"> 
+<OPTION VALUE="-1">Select Team 
+<OPTION VALUE=1>Montreal Canadiens 
+<OPTION VALUE=2>Pittsburg Penguins 
+<OPTION VALUE=3>Toronto Maple Leafs 
+<OPTION VALUE=4>Ottawa Senators 
+</SELECT> 
+<BR> 
+<SELECT NAME="Team" SIZE="5"> 
+<OPTION>                                  </OPTION> 
+<OPTION>                                  </OPTION> 
+<OPTION>                                  </OPTION> 
+<OPTION>                                  </OPTION> 
+<OPTION>                                  </OPTION> 
+</SELECT> 
+</FORM> 

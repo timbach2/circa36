@@ -1,0 +1,22 @@
+Thank you for your order!
+
+Your personal check is welcome; however, for faster shipment please send a money order, payable to 
+
+Circa36 Fiesta
+3500 E. Sunshine
+Springfield, MO 65809
+
+Your Order:
+	
+<!-- BEGIN PlainTextCartRow -->
+|---------------------------------------------
+| ID:		{[id]}
+| Descr:	{[description]}
+| Price:	&#36 {[price]}
+|---------------------------------------------
+<!-- END PlainTextCartRow -->
+| Shipping:    $ {[shipping]}
+| Tax          $ {[tax]}
+| Total Order: $ {[grand_total]}
+|---------------------------------------------
+

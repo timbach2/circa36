@@ -1,0 +1,13 @@
+<!-- announce.ihtml -->
+<!-- BEGIN AnnounceList -->
+<table width="100%" border="1" cellpadding="5" cellspacing="1">
+     <tr>
+          <td width="25%" valign="top">
+          	<div><b>From: </b><a href="contact.php">{[from]}</a></div>
+               <div><b>Date: </b>{[date]}</div>
+               <div><b>Time: </b>{[time]}</div>
+          </td>
+          <td width="75%" valign="top">{[announcement]}</td>
+     </tr>
+</table>
+<!-- END AnnounceList -->

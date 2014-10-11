@@ -1,0 +1,45 @@
+<form action={[self]} method="post">
+<table width="100%">
+	<tr>
+		<td valign="top">
+			<table width="100%" cellspacing="0" border="1">
+				<tr BGCOLOR=#009797>
+
+					<td align="center">
+					<select name="line">
+					<!-- BEGIN LineList --><option value="{[value]}"{[selected]}>{[option]}</option>
+					<!-- END LineList -->
+					</select> <select name="color">
+					<!-- BEGIN ColorList --><option value="{[value]}"{[selected]}>{[option]}</option>
+					<!-- END ColorList -->
+					</select> <select name="item">
+					<!-- BEGIN ItemList --><option value="{[value]}"{[selected]}>{[option]}</option>
+					<!-- END ItemList -->
+					</select>
+					</td>
+				</tr>
+				<tr BGCOLOR=#009797>
+					<td align="center">{[id]}</td>
+				</tr>
+			</table>
+			<blockquote><textarea name="item_description" rows="7" cols="40" wrap="virtual">{[item_description]}</textarea><br></blockquote>
+
+			<table>
+				<tr>
+					<td>Price: </td>
+					<td><input type="text" name="price" value="{[price]}"</td>
+					<td>&nbsp;</td>
+					<td><input type="submit" name="submit1" value="Update Record"></td>
+				</tr>
+			</table>
+
+			<br>
+		</td>
+
+		<td><img src="image.php?id={[id]}">
+</td>
+	</tr>
+</table>
+<input type="hidden" name="action" value="update">
+<input type="hidden" name="id" value="{[id]}">
+</form>

@@ -1,0 +1,9 @@
+<form method="get">
+<h3>Which line would you like to view/edit?</h3>
+<select name="new_line">
+<!-- BEGIN LineOption -->	<option value="{[value]}">{[option]}</option>
+<!-- END LineOption -->
+</select>
+<input type="hidden" name="action" value="memorize">
+<input type="submit" value="Go">
+</form>

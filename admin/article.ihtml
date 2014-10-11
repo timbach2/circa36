@@ -1,0 +1,7 @@
+<form action="article.php" method="post">
+<br>
+<h2>{[message]}</h2>
+Enter the text for the index page:<br>
+<textarea name="article" cols="60" rows="10">{[article]}</textarea>
+<input type="submit" value="Update page">
+</form>

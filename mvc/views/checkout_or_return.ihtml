@@ -1,0 +1,10 @@
+<!-- BEGIN StartCheckout -->
+<form action="/c36/cart/info" method="get">
+<table width="75%" align="center">
+	<tr>
+		<!-- <td><input type="button" onclick="javascript:history.go(-2)" value="Return to Shopping"></td> -->
+		<td><input type="button" onclick="javascript:location.href='/c36/search'" value="Return to Shopping"></td>
+		<td><input type="image" src="http://www.circa36.com/images/checkout1.gif"></td>
+	</tr>
+</table>
+<!-- END StartCheckout -->

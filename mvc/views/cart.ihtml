@@ -1,0 +1,32 @@
+<table width="75%" cellspacing="0" cellpadding="0" border="0" align="center">
+
+	<tr>
+		<th valign="top" class="header_yellow">ID</th>
+		<th valign="top" class="header_yellow">Description</th>
+		<th valign="top" class="header_yellow">Unit Price</th>
+<!--		<th valign="top" class="header_yellow">Shipping</th>
+		<th valign="top" class="header_yellow">Total</th>
+-->	</tr>
+<!-- BEGIN CartRow -->
+	<tr class="{[class]}">
+		<td valign="top" nowrap="nowrap"><small><a href="/c36/cart/delete/{[id]}"><img src="http://www.circa36.com/images/trashcan.gif" width="13" width="14" border="0"></a> {[c36id]}</small></td>
+		<td valign="top" nowrap="nowrap"><small>{[description]}</small></td>
+		<td valign="top" align="right" nowrap="nowrap"><small>\$ {[price]}</small></td>
+<!--		<td valign="top" align="right" nowrap="nowrap"><small>\$ {[shipping]}</small></td>
+		<td valign="top" align="right" nowrap="nowrap"><small>\${[total]}</small></td>
+-->	</tr>
+<!-- END CartRow -->
+	<tr>
+		<td colspan="2" align="right"><small>Shipping: </small></td>
+		<td valign="top" align="right" nowrap="nowrap"><small>$ {[shipping]}</small></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="right"><small>Click <img src="http://www.circa36.com/images/trashcan.gif" width="13" width="14" border="0"> to remove items from cart&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tax (if applicable): </small></td>
+		<td valign="top" align="right" nowrap="nowrap"><small>$ {[tax]}</small></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="right"><small>Total Order: </small></td>
+		<td valign="top" align="right" nowrap="nowrap"><small>$ {[grand_total]}</small></td>
+	</tr>
+</table>
+<br />

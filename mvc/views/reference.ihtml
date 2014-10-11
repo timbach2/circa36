@@ -1,0 +1,183 @@
+<!-- reference.ihtml -->
+<table width="90%">
+	<tr>
+		<td valign="bottom" align="center"><img src="/images/huxford2.jpg" width="176" height="235"><br>
+			<script language="JavaScript">
+			function popUp(URL,NAME) {
+			amznwin=window.open(URL,NAME,'location=yes,scrollbars=yes,status=yes,toolbar=yes,resizable=yes,width=380,height=450,screenX=10,screenY=10,top=10,left=10');
+			amznwin.focus();}
+			document.open();
+			document.write("<a href=javascript:popUp('http://buybox.amazon.com/exec/obidos/redirect?tag=circa36fiesta-20&link_code=xsc&creative=23424&camp=2025&path=/dt/assoc/tg/aa/xml/assoc/-/1574322125/circa36fiesta-20/ref=ac_bb1_,_amazon')><img src=http://rcm-images.amazon.com/images/G/01/associates/remote-buy-box/buy1.gif border=0 alt='Buy from Amazon.com' ></a>");
+			document.close();
+			</script>
+			<noscript>
+			<form method="POST" action="http://buybox.amazon.com/o/dt/assoc/handle-buy-box=1574322125">
+			<input type="hidden" name="asin.1574322125" value="1">
+
+			<input type="hidden" name="tag-value" value="circa36fiesta-20">
+			<input type="hidden" name="tag_value" value="circa36fiesta-20">
+			<input type="image" name="submit.add-to-cart" value="Buy from Amazon.com" border="0" alt="Buy from Amazon.com" src="http://rcm-images.amazon.com/images/G/01/associates/add-to-cart.gif">
+			</form>
+			</noscript>
+		</td>
+		<td valign="bottom" align="center"><img src="/images/hlcca.jpg" width="176" height="242"><br> 
+			<script language="JavaScript">
+			function popUp(URL,NAME) {
+			amznwin=window.open(URL,NAME,'location=yes,scrollbars=yes,status=yes,toolbar=yes,resizable=yes,width=380,height=450,screenX=10,screenY=10,top=10,left=10');
+			amznwin.focus();}
+			document.open();
+			document.write("<a href=javascript:popUp('http://buybox.amazon.com/exec/obidos/redirect?tag=circa36fiesta-20&link_code=xsc&creative=23424&camp=2025&path=/dt/assoc/tg/aa/xml/assoc/-/0764311484/circa36fiesta-20/ref=ac_bb1_,_amazon')><img src=http://rcm-images.amazon.com/images/G/01/associates/remote-buy-box/buy1.gif border=0 alt='Buy from Amazon.com' ></a>");
+			document.close();
+			</script>
+			<noscript>
+
+			<form method="POST" action="http://buybox.amazon.com/o/dt/assoc/handle-buy-box=0764311484">
+			<input type="hidden" name="asin.0764311484" value="1">
+			<input type="hidden" name="tag-value" value="circa36fiesta-20">
+			<input type="hidden" name="tag_value" value="circa36fiesta-20">
+			<input type="image" name="submit.add-to-cart" value="Buy from Amazon.com" border="0" alt="Buy from Amazon.com" src="http://rcm-images.amazon.com/images/G/01/associates/add-to-cart.gif">
+			</form>
+			</noscript>
+		</td>
+		<td valign="bottom" align="center"><img src="/images/littlebook.jpg" width="176" height="210"><br>
+
+			<script language="JavaScript">
+			function popUp(URL,NAME) {
+			amznwin=window.open(URL,NAME,'location=yes,scrollbars=yes,status=yes,toolbar=yes,resizable=yes,width=380,height=450,screenX=10,screenY=10,top=10,left=10');
+			amznwin.focus();}
+			document.open();
+			document.write("<a href=javascript:popUp('http://buybox.amazon.com/exec/obidos/redirect?tag=circa36fiesta-20&link_code=xsc&creative=23424&camp=2025&path=/dt/assoc/tg/aa/xml/assoc/-/0740714449/circa36fiesta-20/ref=ac_bb1_,_amazon')><img src=http://rcm-images.amazon.com/images/G/01/associates/remote-buy-box/buy1.gif border=0 alt='Buy from Amazon.com' ></a>");
+			document.close();
+			</script>
+			<noscript>
+			<form method="POST" action="http://buybox.amazon.com/o/dt/assoc/handle-buy-box=0740714449">
+			<input type="hidden" name="asin.0740714449" value="1">
+			<input type="hidden" name="tag-value" value="circa36fiesta-20">
+			<input type="hidden" name="tag_value" value="circa36fiesta-20">
+			<input type="image" name="submit.add-to-cart" value="Buy from Amazon.com" border="0" alt="Buy from Amazon.com" src="http://rcm-images.amazon.com/images/G/01/associates/add-to-cart.gif">
+			</form>
+
+			</noscript>
+		</td>
+	</tr>
+	<tr>
+		<td valign="bottom" align="center"><img src="/images/post86.jpg" width="176" height="227"><br>
+			<script language="JavaScript">
+			function popUp(URL,NAME) {
+			amznwin=window.open(URL,NAME,'location=yes,scrollbars=yes,status=yes,toolbar=yes,resizable=yes,width=380,height=450,screenX=10,screenY=10,top=10,left=10');
+			amznwin.focus();}
+			document.open();
+			document.write("<a href=javascript:popUp('http://buybox.amazon.com/exec/obidos/redirect?tag=circa36fiesta-20&link_code=xsc&creative=23424&camp=2025&path=/dt/assoc/tg/aa/xml/assoc/-/1574322036/circa36fiesta-20/ref=ac_bb1_,_amazon')><img src=http://rcm-images.amazon.com/images/G/01/associates/remote-buy-box/buy1.gif border=0 alt='Buy from Amazon.com' ></a>");
+			document.close();
+			</script>
+			<noscript>
+			<form method="POST" action="http://buybox.amazon.com/o/dt/assoc/handle-buy-box=1574322036">
+
+			<input type="hidden" name="asin.1574322036" value="1">
+			<input type="hidden" name="tag-value" value="circa36fiesta-20">
+			<input type="hidden" name="tag_value" value="circa36fiesta-20">
+			<input type="image" name="submit.add-to-cart" value="Buy from Amazon.com" border="0" alt="Buy from Amazon.com" src="http://rcm-images.amazon.com/images/G/01/associates/add-to-cart.gif">
+			</form>
+			</noscript>
+		</td>
+		<td valign="bottom" align="center"><img src="/images/hlc.jpg" width="176" height="237"><br>
+			<script language="JavaScript">
+			function popUp(URL,NAME) {
+			amznwin=window.open(URL,NAME,'location=yes,scrollbars=yes,status=yes,toolbar=yes,resizable=yes,width=380,height=450,screenX=10,screenY=10,top=10,left=10');
+			amznwin.focus();}
+			document.open();
+			document.write("<a href=javascript:popUp('http://buybox.amazon.com/exec/obidos/redirect?tag=circa36fiesta-20&link_code=xsc&creative=23424&camp=2025&path=/dt/assoc/tg/aa/xml/assoc/-/0891455353/circa36fiesta-20/ref=ac_bb1_,_amazon')><img src=http://rcm-images.amazon.com/images/G/01/associates/remote-buy-box/buy1.gif border=0 alt='Buy from Amazon.com' ></a>");
+			document.close();
+			</script>
+
+			<noscript>
+			<form method="POST" action="http://buybox.amazon.com/o/dt/assoc/handle-buy-box=0891455353">
+			<input type="hidden" name="asin.0891455353" value="1">
+			<input type="hidden" name="tag-value" value="circa36fiesta-20">
+			<input type="hidden" name="tag_value" value="circa36fiesta-20">
+			<input type="image" name="submit.add-to-cart" value="Buy from Amazon.com" border="0" alt="Buy from Amazon.com" src="http://rcm-images.amazon.com/images/G/01/associates/add-to-cart.gif">
+			</form>
+			</noscript>
+		</td>
+
+		<td valign="bottom" align="center"><img src="/images/giant.jpg" width="176" height="226"><br> 
+			<script language="JavaScript">
+			function popUp(URL,NAME) {
+			amznwin=window.open(URL,NAME,'location=yes,scrollbars=yes,status=yes,toolbar=yes,resizable=yes,width=380,height=450,screenX=10,screenY=10,top=10,left=10');
+			amznwin.focus();}
+			document.open();
+			document.write("<a href=javascript:popUp('http://buybox.amazon.com/exec/obidos/redirect?tag=circa36fiesta-20&link_code=xsc&creative=23424&camp=2025&path=/dt/assoc/tg/aa/xml/assoc/-/0764304178/circa36fiesta-20/ref=ac_bb1_,_amazon')><img src=http://rcm-images.amazon.com/images/G/01/associates/remote-buy-box/buy1.gif border=0 alt='Buy from Amazon.com' ></a>");
+			document.close();
+			</script>
+			<noscript>
+			<form method="POST" action="http://buybox.amazon.com/o/dt/assoc/handle-buy-box=0764304178">
+			<input type="hidden" name="asin.0764304178" value="1">
+			<input type="hidden" name="tag-value" value="circa36fiesta-20">
+			<input type="hidden" name="tag_value" value="circa36fiesta-20">
+			<input type="image" name="submit.add-to-cart" value="Buy from Amazon.com" border="0" alt="Buy from Amazon.com" src="http://rcm-images.amazon.com/images/G/01/associates/add-to-cart.gif">
+			</form>
+
+			</noscript>
+		</td>
+	</tr>
+	<tr>
+		<td valign="bottom" align="center"><img src="/images/snyder.jpg" width="140" height="136"><br> 
+			<script language="JavaScript">
+			function popUp(URL,NAME) {
+			amznwin=window.open(URL,NAME,'location=yes,scrollbars=yes,status=yes,toolbar=yes,resizable=yes,width=380,height=450,screenX=10,screenY=10,top=10,left=10');
+			amznwin.focus();}
+			document.open();
+			document.write("<a href=javascript:popUp('http://buybox.amazon.com/exec/obidos/redirect?tag=circa36fiesta-20&link_code=xsc&creative=23424&camp=2025&path=/dt/assoc/tg/aa/xml/assoc/-/0764315757/circa36fiesta-20/ref=ac_bb1_,_amazon')><img src=http://rcm-images.amazon.com/images/G/01/associates/remote-buy-box/buy1.gif border=0 alt='Buy from Amazon.com' ></a>");
+			document.close();
+			</script>
+			<noscript>
+			<form method="POST" action="http://buybox.amazon.com/o/dt/assoc/handle-buy-box=0764315757">
+			<input type="hidden" name="asin.0764315757" value="1">
+
+			<input type="hidden" name="tag-value" value="circa36fiesta-20">
+			<input type="hidden" name="tag_value" value="circa36fiesta-20">
+			<input type="image" name="submit.add-to-cart" value="Buy from Amazon.com" border="0" alt="Buy from Amazon.com" src="http://rcm-images.amazon.com/images/G/01/associates/add-to-cart.gif">
+			</form>
+			</noscript>
+		</td>
+		<td valign="bottom" align="center"><img src="/images/chinabook.jpg" width="176" height="231"><br>
+			<script language="JavaScript">
+			function popUp(URL,NAME) {
+			amznwin=window.open(URL,NAME,'location=yes,scrollbars=yes,status=yes,toolbar=yes,resizable=yes,width=380,height=450,screenX=10,screenY=10,top=10,left=10');
+			amznwin.focus();}
+			document.open();
+			document.write("<a href=javascript:popUp('http://buybox.amazon.com/exec/obidos/redirect?tag=circa36fiesta-20&link_code=xsc&creative=23424&camp=2025&path=/dt/assoc/tg/aa/xml/assoc/-/0810966921/circa36fiesta-20/ref=ac_bb1_,_amazon')><img src=http://rcm-images.amazon.com/images/G/01/associates/remote-buy-box/buy1.gif border=0 alt='Buy from Amazon.com' ></a>");
+			document.close();
+			</script>
+
+			<noscript>
+			<form method="POST" action="http://buybox.amazon.com/o/dt/assoc/handle-buy-box=0810966921">
+			<input type="hidden" name="asin.0810966921" value="1">
+			<input type="hidden" name="tag-value" value="circa36fiesta-20">
+			<input type="hidden" name="tag_value" value="circa36fiesta-20">
+			<input type="image" name="submit.add-to-cart" value="Buy from Amazon.com" border="0" alt="Buy from Amazon.com" src="http://rcm-images.amazon.com/images/G/01/associates/add-to-cart.gif">
+			</form>
+			</noscript>
+		</td>
+
+		<td valign="bottom" align="center"><img src="/images/hlcchina.jpg" width="176" height="224"><br>
+			<script language="JavaScript">
+			function popUp(URL,NAME) {
+			amznwin=window.open(URL,NAME,'location=yes,scrollbars=yes,status=yes,toolbar=yes,resizable=yes,width=380,height=450,screenX=10,screenY=10,top=10,left=10');
+			amznwin.focus();}
+			document.open();
+			document.write("<a href=javascript:popUp('http://buybox.amazon.com/exec/obidos/redirect?tag=circa36fiesta-20&link_code=xsc&creative=23424&camp=2025&path=/dt/assoc/tg/aa/xml/assoc/-/0764311646/circa36fiesta-20/ref=ac_bb1_,_amazon')><img src=http://rcm-images.amazon.com/images/G/01/associates/remote-buy-box/buy1.gif border=0 alt='Buy from Amazon.com' ></a>");
+			document.close();
+			</script>
+			<noscript>
+			<form method="POST" action="http://buybox.amazon.com/o/dt/assoc/handle-buy-box=0764311646">
+			<input type="hidden" name="asin.0764311646" value="1">
+			<input type="hidden" name="tag-value" value="circa36fiesta-20">
+			<input type="hidden" name="tag_value" value="circa36fiesta-20">
+			<input type="image" name="submit.add-to-cart" value="Buy from Amazon.com" border="0" alt="Buy from Amazon.com" src="http://rcm-images.amazon.com/images/G/01/associates/add-to-cart.gif">
+
+			</form>
+			</noscript>
+		</td>
+	</tr>
+</table>

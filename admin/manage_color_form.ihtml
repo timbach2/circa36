@@ -1,0 +1,21 @@
+<form name="form1" method="get">
+<table width="50%">
+	<tr>
+		<td><a href="{[self]}?action=list">Show List</a></td>
+		<td><a href="{[self]}?init">Choose Line</a></td>
+	</tr>
+</table>
+<h3>{[line_name]} Line</h3>
+<table>
+	<tr>
+		<td>Color Description: </td>
+		<td><input type="text" name="color" size="40" value="{[color]}"></td>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="hidden" name="action" value="{[action]}"><input type="hidden" name="id" value="{[id]}"><input type="submit" value="Go"></td>
+	</tr>
+</table>
+</form>
+<script language="javascript">
+document.form1.item.focus();
+</script>

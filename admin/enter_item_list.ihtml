@@ -1,0 +1,17 @@
+<form name="form1">
+<div>Enter item type: 
+<input type="text" name="item" size="40" value="{[item]}"> 
+<input type="hidden" name="action" value="{[action]}">
+<input type="hidden" name="id" value="{[id]}">
+<input type="submit" name="submit1" value="Go">
+</div>
+<div>Shipping price: $
+<input type="text" name="shipping" size="15" value="{[shipping]}">
+</div>
+<br>
+<div><a href="{[self]}?action=list">List</a> items already entered</div>
+<script language="javascript">
+document.form1.item.focus();
+</script>
+</body>
+</html>
